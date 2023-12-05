@@ -1,0 +1,83 @@
+body  {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 80px;
+    font-size: 75px;
+
+
+}
+
+
+.images-section h2 {
+    padding: 15px;
+    margin-bottom: 0px;
+    
+}
+
+.img-resize1 {
+    flex-wrap: wrap;
+    width: 200px;
+    height: 150px;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 20px;
+    margin-bottom: 0px;
+}
+
+.img-resize2 {
+    flex-wrap: wrap;
+    width: 200px;
+    height: 150px;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 20px;
+    margin-bottom: 0px;
+}
+
+.insta-photo {
+    flex-wrap: wrap;
+    width: 50px;
+}
+.facebook-photo {
+    flex-wrap: wrap;
+    width: 50px;
+}
+
+.contact-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+.opening-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+
+
+.text-section {
+    text-align: justify;
+    padding: 15px; /* Adjust as needed */
+    margin-bottom: 20px; /* Adjust as needed */
+    line-height: 1.5; /* Adjust as needed */
+}
+
+
+
+
