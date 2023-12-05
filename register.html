@@ -7,23 +7,23 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 
-<div class="container">
-<header>
-  <a href="index.html"><img class="logo" src="Cafes%20Logo.png" width="300" height="60" alt="logo"></a>
-  <nav>
-    <ul class="nav_links">
-      <li><a href="Map/map.html">Map</a></li>
-      <li><a href="favorites.html">Favorites</a></li>
-      <li><a href="list.html">List Of Cafes</a></li>
-      <li><a href="register.html">Register/Log In</a></li>
-    </ul>
-  </nav>
-</header>
-
 <body>
+<div class="container">
+  <header>
+    <a href="index.html"><img class="logo" src="Cafes%20Logo.png" width="300" height="60" alt="logo"></a>
+    <nav>
+      <ul class="nav_links">
+        <li><a href="map.html">Map</a></li>
+        <li><a href="favorites.html">Favorites</a></li>
+        <li><a href="list.html">List Of Cafes</a></li>
+        <li><a href="register.html">Register/Log In</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <div class="main-block">
     <h1>Registration</h1>
-    <form action="/">
+    <form id="registrationForm" action="http://localhost:63342/portfolie-6/register.html" method="POST">
       <hr>
       <div class="account-type">
         <input type="radio" value="none" id="radioOne" name="account" checked/>
@@ -33,25 +33,18 @@
       </div>
       <hr>
       <label class="icon" for="email"><i class="fas fa-envelope"></i></label>
-      <input type="text" name="name" id="email" placeholder="Email" required/>
+      <input type="text" name="email" id="email" placeholder="Email" required/>
       <label class="icon" for="name"><i class="fas fa-user"></i></label>
-      <input type="text" name="name" id="name" placeholder="Name" required/>
+      <input type="text" name="username" id="name" placeholder="Name" required/>
+      <label class="icon" for="companyName"><i class="fas fa-building"></i></label>
+      <input type="text" name="companyName" id="companyName" placeholder="Company Name"/>
       <label class="icon" for="password"><i class="fas fa-unlock-alt"></i></label>
-      <input type="password" name="name" id="password" placeholder="Password" required/>
+      <input type="password" name="password" id="password" placeholder="Password" required/>
       <hr>
-      <button type="button" id="submit">Submit</button>
-
+      <button type="submit" id="submit">Submit</button>
     </form>
-    <h1>Registered Users</h1>
-    <!-- Create a container (div, list, etc) to contain registered users -->
-    <!-- something like this, but generated in javascript, you can delete the below example -->
-    <ul>
-      <li>User 1</li>
-      <li>User 2</li>
-      <li>User 3</li>
-    </ul>
   </div>
-</body>
 </div>
-<script src="./main.js"></script>
+<script src="register.js"></script>
+</body>
 </html>

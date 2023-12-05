@@ -3,6 +3,11 @@
     font-family: "Sinhala MN", serif;
 }
 
+.welcome {
+    display: flex;
+    justify-content: center;
+}
+
 .nav_links {
     font-size: 25px;
     color: white;
@@ -197,5 +202,10 @@ button {
     color: #fff;
 }
 button:hover {
-    background: #362312;
+    opacity: 0.75;
+}
+
+button:active {
+    /* Your active state styles here */
+    background-color: #362312;
 }
