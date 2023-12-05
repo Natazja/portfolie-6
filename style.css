@@ -1,15 +1,67 @@
-html, body {
-    display: flex;
-    justify-content: space-around;
-    height: 100%;
+* {
+    background-color: #836953;
+    font-family: "Sinhala MN", serif;
 }
-body, div, h1, form, input, p {
+
+.nav_links {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* or any alignment you prefer */
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+.nav_links li {
+    display: inline-block;
+    justify-content: space-between;
+    color: white;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 55px;
+    color: white;
+}
+
+.nav_links li a:hover {
+    color: #362312;;
+}
+
+div, h1, form, input, p {
     padding: 0;
     margin: 0;
     outline: none;
-    font-family: Roboto, Arial, sans-serif;
     font-size: 16px;
-    color: #666;
+    color: #362312;
 }
 
 h1 {
@@ -24,8 +76,8 @@ p {
 }
 
 hr {
-    color: #a9a9a9;
-    opacity: 0.3;
+    color: white;
+    opacity: 0.8;
 }
 
 #content{
@@ -34,15 +86,19 @@ hr {
     justify-content: center;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+}
+
 .main-block {
     max-width: 340px;
     min-height: 460px;
     padding: 10px 0;
-    margin: auto;
     border-radius: 5px;
-    border: solid 1px #ccc;
-    box-shadow: 1px 2px 5px rgba(0,0,0,.31);
-    background: #ebebeb;
+    border: solid 1px white;
+    box-shadow: 2px 3px 6px rgba(0,0,0,.50);
+    background: #836953;
 }
 
 .output-container{
@@ -85,7 +141,7 @@ label.radio:before {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: #1c87c9;
+    background: #362312;
 }
 label.radio:after {
     content: "";
@@ -109,18 +165,19 @@ input[type=text], input[type=password] {
     margin: 13px 0 0 -5px;
     padding-left: 10px;
     border-radius: 0 5px 5px 0;
-    border: solid 1px #cbc9c9;
+    border: solid 1px #362312;
     box-shadow: 1px 2px 5px rgba(0,0,0,.09);
     background: #fff;
 }
 input[type=password] {
     margin-bottom: 15px;
+    color: #362312;
 }
 .icon {
     display: inline-block;
     padding: 9.3px 15px;
     box-shadow: 1px 2px 5px rgba(0,0,0,.09);
-    background: #1c87c9;
+    background: #362312;
     color: #fff;
     text-align: center;
 }
@@ -134,11 +191,11 @@ button {
     margin: 10px auto;
     border-radius: 5px;
     border: none;
-    background: #1c87c9;
+    background: #362312;
     font-size: 14px;
     font-weight: 600;
     color: #fff;
 }
 button:hover {
-    background: #26a9e0;
+    background: #362312;
 }
