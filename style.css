@@ -65,6 +65,7 @@ div, h1, form, input, p {
     padding: 0;
     margin: 0;
     outline: none;
+    font-family: Roboto, Arial, sans-serif;
     font-size: 16px;
     color: #362312;
 }
@@ -100,6 +101,7 @@ body {
     max-width: 340px;
     min-height: 460px;
     padding: 10px 0;
+    margin: auto;
     border-radius: 5px;
     border: solid 1px white;
     box-shadow: 2px 3px 6px rgba(0,0,0,.50);
@@ -148,6 +150,44 @@ label.radio:before {
     border-radius: 50%;
     background: #362312;
 }
+#userName {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    color: #362312;
+}
+#userEmail {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    color: #362312;
+}
+#userFavCafe {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    color: #362312;
+}
+#userID {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    color: #362312;
+    background-color: white;
+}
+
 label.radio:after {
     content: "";
     position: absolute;
