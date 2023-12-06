@@ -1,9 +1,12 @@
 const express = require("express");
 const mysql = require("mysql2");
-// const cors = require("cors");
+const cors = require("cors");
 const app = express();
 const port = 3002;
 // const ejs = require("ejs");
+
+app.use(cors());
+app.use(express.json());
 
 const connection = mysql.createConnection( {
     host: "localhost",
@@ -21,19 +24,23 @@ connection.connect((error) => {
 });
 
 
-let userArray = [];
-
-
-connection.query("select * from users", function (err, result) {
-    if (err) throw err;
-    app.get("/users", (req, res) => {
+app.get("/users", (req, res) =>{
+    console.log("asd0");
+    connection.query("select * from users", function (err, result){
+        if (err){
+            console.log(err.message);
+        }
+        console.log(result)
         res.send(result)
-        userArray = result
     })
 });
 
+app.get("/", (req, res)=>{
+   res.send("everything ok");
+});
 
-console.log(userArray)
+
+
 //const user1 =
 // console.log(user1)
 
