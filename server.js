@@ -3,7 +3,7 @@ const cors = require('cors');
 const mysql = require('mysql2');
 
 const app = express();
-const port = 63342;
+const port = 3000;
 
 const pool = mysql.createPool({
     host: "localhost",
@@ -130,12 +130,26 @@ app.post('/favorites', (req, res) => {
     });
 });
 
-app.post('http://localhost:63342/portfolie-6/register.html', (req, res) => {
-    const formData = req.body;
-    console.log(formData);
+app.post('/users', (req, res) => {
+    const { email, username, password, account_type } = req.body;
 
-    res.json({ success: true, message: "Form data received successfully!" });
+    const newUser = {
+        email: email,        // Adjusted for the 'e_mail' column
+        username: username,  // Adjusted for the 'user_name' column
+        password: password,
+        account_type: account_type
+    };
+
+    pool.query('INSERT INTO users SET ?', newUser, (error, results, fields) => {
+        if (error) {
+            console.error("Error adding new user:", error);
+            return res.status(500).json({ error: "Internal Server Error", details: error.message });
+        } else {
+            return res.json({ success: true, message: "User added successfully" });
+        }
+    });
 });
+
 
 // Similar modifications for users and favorites endpoints...
 app.get('*', (req, res) => {
