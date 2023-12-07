@@ -1,6 +1,6 @@
 fetch("http://localhost:3002/users")
 .then(res => res.json())
-.then((data)=>{
+.then((data)=> {
     console.log(data)
     document.querySelector("#userCheckBTN").addEventListener("click", function userCheckFunction() {
         data.forEach(object => {
