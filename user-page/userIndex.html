@@ -19,20 +19,28 @@
 
 </header>
 <body>
+
 <section>
-    <div class="main-block">
+
+    <div id="user-main-block">
         <h1>User Info</h1>
+        <section>
+            <div id="userCheck">
+                <label for="userInput"></label><input type="text" id="userInput">
+                <button id="userCheckBTN">Check for user</button>
+            </div>
+        </section>
         <label class="icon" for="userName"><i class="fas fa-user"></i></label>
-        <p id="userName">Name: Alice</p>
+        <p id="userName"></p>
         <br>
         <label class="icon" for="userEmail"><i class="fas fa-envelope"></i></label>
-        <p id="userEmail">Email: alice@email.com</p>
+        <p id="userEmail"></p>
         <br>
         <label class="icon" for="userFavCafe"><i class="fa-solid fa-shop"></i></label>
-        <p id="userFavCafe">Favorite cafe: Democratic Coffee</p>
+        <p id="userFavCafe"></p>
         <br>
         <label class="icon" for="userID"><i class="fa-solid fa-id-card"></i></label>
-        <p id="userID">user ID: 01</p>
+        <p id="userID"></p>
     </div>
 
 
@@ -41,5 +49,5 @@
 
 
 </body>
-<script src="/user-page/users.js"></script>
+    <script src="/user-page/index.js"></script>
 </html>
