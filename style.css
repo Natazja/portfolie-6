@@ -185,7 +185,6 @@ label.radio:before {
     font-family: Roboto, Arial, sans-serif;
     font-size: 16px;
     color: #362312;
-    background-color: white;
 }
 
 label.radio:after {
@@ -248,4 +247,20 @@ button:hover {
 button:active {
     /* Your active state styles here */
     background-color: #362312;
+}
+
+#user-main-block {
+    max-width: 340px;
+    min-height: 460px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 5px;
+    border: solid 1px white;
+    box-shadow: 2px 3px 6px rgba(0,0,0,.50);
+    background: #836953;
+}
+
+#userCheck {
+    margin: auto;
+
 }
