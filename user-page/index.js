@@ -16,11 +16,12 @@ fetch("http://localhost:3002/users")
         data.forEach(object => {
             if (object.user_name !== document.querySelector("#userInput").value || object.e_mail !== document.querySelector("#userInput2").value) {
                 wrongCounter ++;
-                if (wrongCounter === 10) { // would be good to find a way to not have it hardcoded - eg. use object.user_ID number, but i couldnt make it work :^(
+                if (wrongCounter === data.length) {
                     alert("Wrong name/email")
-                    wrongCounter -= 10;
+                    wrongCounter -= data.length;
                 }
-
+            } else {
+                wrongCounter -= data.length - 1;
             }
         })
 
