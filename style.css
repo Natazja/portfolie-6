@@ -3,9 +3,19 @@
     font-family: "Sinhala MN", serif;
 }
 
-.welcome {
+body {
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* Ensure a vertical flow of header and main */
+    align-items: center; /* Center content horizontally */
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+    margin-bottom: 45px;
 }
 
 .nav_links {
@@ -14,24 +24,7 @@
     text-decoration: none;
     display: flex;
     align-items: center;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* or any alignment you prefer */
-}
-
-header {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-header ul {
-    display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .logo {
@@ -41,20 +34,73 @@ header ul {
     margin-top: 15px;
 }
 
+.welcome {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px; /* Add some top margin to separate from the navigation bar */
+    border-bottom: 5px solid #362312; /* Add a white border below the welcome section */
+    border-radius: 10px;
+}
+
+.quote {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: #362312;
+    margin-top: 35px;
+    font-style: italic;
+}
+
+.coffee-link {
+    color: #362312;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.coffee-link:hover {
+    color: white;
+    transition: all 0.3s ease 0s;
+}
+
+.introduction {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    color: #362312;
+    margin-top: 35px;
+    font-style: italic;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* or any alignment you prefer */
+}
+
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .nav_links li {
     display: inline-block;
     justify-content: space-between;
     color: white;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     margin-top: 10px;
+    margin-right: 45px;
 }
 
 .nav_links li a {
+    display: flex;
     transition: all 0.3s ease 0s;
     list-style-type: none;
     text-decoration: none;
-    padding: 55px;
     color: white;
+    margin-left: 50px; /* Adjust the left margin as needed */
 }
 
 .nav_links li a:hover {
@@ -65,7 +111,7 @@ div, h1, form, input, p {
     padding: 0;
     margin: 0;
     outline: none;
-    font-family: Roboto, Arial, sans-serif;
+    font-family: "Sinhala MN", sans-serif;
     font-size: 16px;
     color: #362312;
 }

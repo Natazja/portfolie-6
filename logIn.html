@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>CoffeeCrazeCPH.com</title>
+  <title>CoffeeCrazeCPH.com - Log In</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
@@ -16,32 +16,24 @@
         <li><a href="map.html">Map</a></li>
         <li><a href="favorites.html">Favorites</a></li>
         <li><a href="list.html">List Of Cafes</a></li>
-        <li><a href="registration-page/register.html">Register</a></li>
+        <li><a href="register.html">Register</a></li>
         <li><a href="logIn.html">Log In</a></li>
       </ul>
     </nav>
   </header>
 
   <div class="main-block">
-    <h1>Registration</h1>
-    <form id="registrationForm" action="http://localhost:4000/users" method="POST">
-      <hr>
-      <div class="account-type">
-        <input type="radio" value="Personal" id="radioOne" name="account_type" checked/>
-        <label for="radioOne" class="radio">Personal</label>
-      </div>
-      <hr>
+    <h1>Log In</h1>
+    <form id="logInForm">
       <label class="icon" for="email"><i class="fas fa-envelope"></i></label>
       <input type="text" name="email" id="email" placeholder="Email" required/>
-      <label class="icon" for="name"><i class="fas fa-user"></i></label>
-      <input type="text" name="username" id="name" placeholder="Name" required/>
       <label class="icon" for="password"><i class="fas fa-unlock-alt"></i></label>
       <input type="password" name="password" id="password" placeholder="Password" required/>
       <hr>
-      <button type="button" id="submit">Submit</button>
+      <button type="button" id="logIn">Log In</button>
     </form>
   </div>
-  <script src="registration-page/register.js"></script>
+  <script src="logIn.js"></script>
 </div>
 </body>
 </html>

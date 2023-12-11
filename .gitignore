@@ -1,4 +1,4 @@
-/node_modules/
-user-page/.env
-/.idea/
-cafe-list/.env
+node_modules
+/.idea/modules.xml
+/.idea/portfolie-6.iml
+/.idea/vcs.xml
