@@ -204,6 +204,7 @@ label.radio:before {
     font-family: Roboto, Arial, sans-serif;
     font-size: 16px;
     color: #362312;
+    background-color: white;
 }
 #userEmail {
     display: inline-block;
@@ -213,6 +214,7 @@ label.radio:before {
     font-family: Roboto, Arial, sans-serif;
     font-size: 16px;
     color: #362312;
+    background-color: white;
 }
 #userFavCafe {
     display: inline-block;
@@ -222,6 +224,7 @@ label.radio:before {
     font-family: Roboto, Arial, sans-serif;
     font-size: 16px;
     color: #362312;
+    background-color: white;
 }
 #userID {
     display: inline-block;
@@ -231,6 +234,7 @@ label.radio:before {
     font-family: Roboto, Arial, sans-serif;
     font-size: 16px;
     color: #362312;
+    background-color: white;
 }
 
 label.radio:after {
@@ -296,17 +300,52 @@ button:active {
 }
 
 #user-main-block {
+    clear: left;
+    display: inline-block;
     max-width: 340px;
     min-height: 460px;
     padding: 10px;
-    margin: auto;
+    margin: 0;
     border-radius: 5px;
     border: solid 1px white;
     box-shadow: 2px 3px 6px rgba(0,0,0,.50);
     background: #836953;
+
 }
 
 #userCheck {
     margin: auto;
 
+}
+
+#userInput {
+
+    width: 96%;
+    border-radius: 5px;
+    margin: auto;
+}
+#userInput2 {
+    width: 96%;
+    border-radius: 5px;
+    margin: auto;
+}
+
+#userNameBox {
+    background-color: white;
+    border-radius: 5px;
+}
+
+#userEmailBox {
+    background-color: white;
+    border-radius: 5px;
+}
+
+#userFavCafeBox {
+    background-color: white;
+    border-radius: 5px;
+}
+
+#userIDBox {
+    background-color: white;
+    border-radius: 5px;
 }
