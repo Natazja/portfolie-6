@@ -37,7 +37,7 @@ header {
 .welcome {
     display: flex;
     justify-content: center;
-    margin-top: 70px; /* Add some top margin to separate from the navigation bar */
+    margin-top: 40px; /* Add some top margin to separate from the navigation bar */
     border-bottom: 5px solid #362312; /* Add a white border below the welcome section */
     border-radius: 10px;
 }
