@@ -44,6 +44,17 @@ app.get("/users", (req, res) =>{
     })
 });
 
+app.get("/cafes", (req, res) =>{
+    console.log("asd0");
+    connection.query("select * from cafes", function (err, result){
+        if (err){
+            console.log(err.message);
+        }
+        console.log(result)
+        res.send(result)
+    })
+});
+
 app.get("/", (req, res)=>{
    res.send("everything ok");
 });
