@@ -8,12 +8,41 @@ h1 {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 80px;
+    margin: 40px;
     font-size: 75px;
 
 
 }
+.btn {
+    background: transparent;
+    border: none;
+    margin: 10px;
+    font-size: 70px;
+    outline: none;
+    color: grey;
+    transition: transform 0.2s ease-in-out;
+}
 
+.btn.clicked {
+    color: red;
+    transform: scale(1.2);
+}
+
+
+#message.hidden {
+    opacity: 0;
+    visibility: hidden;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.visible {
+    visibility: visible;
+    opacity: 1;
+
+}
 
 .images-section h2 {
     padding: 15px;
@@ -26,7 +55,7 @@ h1 {
     width: 200px;
     height: 150px;
     justify-content: center;
-    padding: 15px;
+    padding-left: 15px;
     border-radius: 20px;
     margin-bottom: 0px;
 }
@@ -36,7 +65,7 @@ h1 {
     width: 200px;
     height: 150px;
     justify-content: center;
-    padding: 15px;
+
     border-radius: 20px;
     margin-bottom: 0px;
 }
@@ -76,6 +105,15 @@ h1 {
     padding: 15px; /* Adjust as needed */
     margin-bottom: 20px; /* Adjust as needed */
     line-height: 1.5; /* Adjust as needed */
+}
+
+.location-section {
+    padding: 15px;
+    margin: 0px;
+}
+
+.location-section p {
+    font-size: 20px;
 }
 
 

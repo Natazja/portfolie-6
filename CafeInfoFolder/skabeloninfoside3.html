@@ -1,0 +1,92 @@
+<!-- cafePage.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${cafe.name} + ' - Cafe Details'"></title>
+    <link rel="stylesheet" href ="Infocss.css">
+</head>
+<body>
+
+<!-- Navigation bar or header -->
+<header>
+    <h1>Atelier September</h1>
+</header>
+
+<!-- Favorite button -->
+<div class="buttons">
+    <button id="button1" class="btn"><i class="fa-solid fa-heart"></i></button>
+    <p id="message" class="hidden">Added to favorites!</p>
+</div>
+
+<div class="images-section">
+    <section>
+        <h2>Images</h2>
+        <img src="https://originalcoffee.dk/wp-content/uploads/2022/08/Store_Kongensgade1.jpg" alt="Cafe Interior" class="img-resize1">
+        <img src="https://originalcoffee.dk/wp-content/uploads/2022/08/Store_Kongensgade4.jpg" alt="cake" class="img-resize2">
+
+    </section>
+</div>
+
+<!-- Description -->
+<div class="text-section">
+    <section>
+        <h2>About Atelier September</h2>
+        <p>
+            Atelier September is founded by chef Frederik Bille Brahe and located in the centre of Copenhagen and a little north; in Hellerup.
+        </p>
+        <p>
+            Breakfast, lunch and cakes as well as warm and cold drinks are served throughout the day and the ambience is warm, vibrant and welcoming.
+        </p>
+    </section>
+</div>
+
+<!-- Contact Information -->
+<div class="contact-section">
+    <section>
+        <h2>Follow On</h2>
+        <a href=https://www.instagram.com/atelierseptember/?hl=en><img src=https://www.freepnglogos.com/uploads/logo-ig-png/logo-ig-instagram-new-logo-vector-download-13.png class ="insta-photo"></a>
+        <a href=https://www.facebook.com/cafeatelierseptember ><img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png" class="facebook-photo"></a>
+    </section>
+</div>
+
+<!-- Opening Hours -->
+<div class="opening-section">
+    <section>
+        <h2>Opening Hours</h2>
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Opening Hours</th>
+            </tr>
+            <!-- Use a loop to display hours for each day -->
+            <tr>
+                <td>Monday-Friday</td>
+                <td>7:30-18</td>
+            </tr>
+            <tr>
+                <td>Saturday-Sunday</td>
+                <td>9-17</td>
+            </tr>
+
+        </table>
+    </section>
+</div>
+
+<!-- Map -->
+<section>
+    <h2>Location</h2>
+    <div class="location-section">
+        <p> Kronprinsessegade 62, Copenhagen 1306.</p>
+
+    </div>
+</section>
+
+<!-- Add more sections as needed, such as Menu, Events, Social Media links, etc. -->
+
+<!-- Footer -->
+<script src="https://kit.fontawesome.com/6dd8ea4c88.js" crossorigin="anonymous"></script>
+<script src="favoriteButton.js"></script>
+</body>
+</html>

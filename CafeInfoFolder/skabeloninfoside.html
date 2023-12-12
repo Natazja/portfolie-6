@@ -12,14 +12,18 @@
 <!-- Navigation bar or header -->
 <header>
     <h1>Democratic Coffee</h1>
-    <p>Google Rating: </span></p>
 </header>
 
-<!-- Image gallery -->
+<!-- Favorite button -->
+<div class="buttons">
+     <button id="button1" class="btn"><i class="fa-solid fa-heart"></i></button>
+     <p id="message" class="hidden">Added to favorites!</p>
+</div>
+
 <div class="images-section">
     <section>
     <h2>Images</h2>
-        <img src="DSC_0625.jpeg" alt="Cafe Interior" class="img-resize1">
+        <img src="../DSC_0625.jpeg" alt="Cafe Interior" class="img-resize1">
         <img src="https://media-cdn.tripadvisor.com/media/photo-s/11/36/c4/15/amazing-croissant.jpg" alt="cake" class="img-resize2">
 
 </section>
@@ -62,11 +66,11 @@
         <!-- Use a loop to display hours for each day -->
         <tr>
             <td>Monday-Friday</td>
-            <td>07.30-17</td>
+            <td>7.30-17</td>
         </tr>
         <tr>
             <td>Saturday-Sunday</td>
-            <td>09-16</td>
+            <td>9-16</td>
         </tr>
 
     </table>
@@ -86,6 +90,7 @@
 <!-- Add more sections as needed, such as Menu, Events, Social Media links, etc. -->
 
 <!-- Footer -->
-
+<script src="https://kit.fontawesome.com/6dd8ea4c88.js" crossorigin="anonymous"></script>
+<script src="favoriteButton.js"></script>
 </body>
 </html>

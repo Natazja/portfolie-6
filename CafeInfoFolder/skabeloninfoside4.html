@@ -1,0 +1,93 @@
+<!-- cafePage.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${cafe.name} + ' - Cafe Details'"></title>
+    <link rel="stylesheet" href ="Infocss.css">
+</head>
+<body>
+
+<!-- Navigation bar or header -->
+<header>
+    <h1>The Coffee Collective</h1>
+</header>
+
+<!-- Favorite button -->
+<div class="buttons">
+    <button id="button1" class="btn"><i class="fa-solid fa-heart"></i></button>
+    <p id="message" class="hidden">Added to favorites!</p>
+</div>
+
+<div class="images-section">
+    <section>
+        <h2>Images</h2>
+        <img src="https://scontent-cph2-1.xx.fbcdn.net/v/t31.18172-8/18739079_798329177008682_8706526208119284038_o.jpg?_nc_cat=107&ccb=1-7&_nc_sid=300f58&_nc_ohc=E7mAPcAxxZsAX88VPdq&_nc_ht=scontent-cph2-1.xx&oh=00_AfAGvpIlntfC-bt3O7q4mOzfmXC2fo8mJNiJOfCBxBQSIQ&oe=659FBC14" alt="Cafe Interior" class="img-resize1">
+        <img src="https://scontent-cph2-1.xx.fbcdn.net/v/t39.30808-6/243931256_369368484884409_844374959008895344_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=783fdb&_nc_ohc=jZq5T9bD2SkAX88nqT6&_nc_ht=scontent-cph2-1.xx&oh=00_AfDq_5tlLya5mxmQFEUykmTvTA2h9oEwtsF-e7vy9FPOqw&oe=657DF967" alt="cake" class="img-resize2">
+
+    </section>
+</div>
+
+<!-- Description -->
+<div class="text-section">
+    <section>
+        <h2>About The Coffee Collective</h2>
+        <p>
+            Founded in 2007, The Coffee Collective is to this day 100% owned and run by Peter N. Dupont, Casper Engel Rasmussen and Klaus Thomsen. With several competition awards in the bag, including gold in both the World Barista Championship and World Cup Tasting championships, we continue to explore exciting coffee experiences.
+        </p>
+        <p>
+            Creating the best coffee experiences in the world while helping farmers achieve more value is what drives us. At The Coffee Collective, we roast daily and focus on sustainability from seed to cup.
+        </p>
+    </section>
+</div>
+
+<!-- Contact Information -->
+<div class="contact-section">
+    <section>
+        <h2>Follow On</h2>
+        <a href=https://www.instagram.com/coffeecollectif/?hl=da><img src=https://www.freepnglogos.com/uploads/logo-ig-png/logo-ig-instagram-new-logo-vector-download-13.png class ="insta-photo"></a>
+        <a href=https://www.facebook.com/TheCoffeeCollectiveJaegersborggade/ ><img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png" class="facebook-photo"></a>
+    </section>
+</div>
+
+<!-- Opening Hours -->
+<div class="opening-section">
+    <section>
+        <h2>Opening Hours</h2>
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Opening Hours</th>
+            </tr>
+            <!-- Use a loop to display hours for each day -->
+            <tr>
+                <td>Monday-Friday</td>
+                <td>7-19</td>
+            </tr>
+            <tr>
+                <td>Saturday-Sunday</td>
+                <td>8-19</td>
+            </tr>
+
+        </table>
+    </section>
+</div>
+
+<!-- Map -->
+<section>
+    <h2>Location</h2>
+    <div class="location-section">
+        <p> Jægersborggade 57, Copenhagen, 2200. </p>
+
+
+    </div>
+</section>
+
+<!-- Add more sections as needed, such as Menu, Events, Social Media links, etc. -->
+
+<!-- Footer -->
+<script src="https://kit.fontawesome.com/6dd8ea4c88.js" crossorigin="anonymous"></script>
+<script src="favoriteButton.js"></script>
+</body>
+</html>
