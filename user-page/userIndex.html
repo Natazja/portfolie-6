@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User Info</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/9108f189bb.js" crossorigin="anonymous"></script>
+</head>
+
+
+
+
+
+<body>
+<div class="container">
+    <header>
+        <a href="http://localhost:63342/portfolie-6/index.html?_ijt=j1262p9amjjrno26o523lmpel7&_ij_reload=RELOAD_ON_SAVE"><img class="logo" src="/Cafes%20Logo.png" width="300" height="60" alt="logo"></a>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="map.html">Map</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
+                <li><a href="list.html">List Of Cafes</a></li>
+                <li><a href="register.html">Register/Log In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="user-main-block">
+        <h1>Find User & Info</h1>
+        <section>
+            <div id="userCheck">
+                <label for="userInput"></label>Name of User<input type="text" id="userInput">
+                <label for="userInput2"></label>Email of User<input type="text" id="userInput2">
+                <button id="userCheckBTN">Check for user</button>
+            </div>
+        </section>
+        <div id="userInfoBox">
+            <div id="userNameBox">
+                <label class="icon" for="userName"><i class="fas fa-user"></i></label>
+                <p id="userName"></p>
+            </div>
+            <br>
+            <div id="userEmailBox">
+                <label class="icon" for="userEmail"><i class="fas fa-envelope"></i></label>
+                <p id="userEmail"></p>
+            </div>
+            <br>
+            <div id="userFavCafeBox">
+                <label class="icon" for="userFavCafe"><i class="fa-solid fa-shop"></i></label>
+                <p id="userFavCafe"></p>
+            </div>
+            <br>
+            <div id="userIDBox">
+                <label class="icon" for="userID"><i class="fa-solid fa-id-card"></i></label>
+                <p id="userID"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+</body>
+    <script src="/user-page/userIndex.js"></script>
+</html>

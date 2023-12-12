@@ -3,30 +3,28 @@
     font-family: "Sinhala MN", serif;
 }
 
+body {
+    display: flex;
+    flex-direction: column; /* Ensure a vertical flow of header and main */
+    align-items: center; /* Center content horizontally */
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+    margin-bottom: 45px;
+}
+
 .nav_links {
     font-size: 25px;
     color: white;
     text-decoration: none;
     display: flex;
     align-items: center;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* or any alignment you prefer */
-}
-
-header {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-header ul {
-    display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .logo {
@@ -36,20 +34,73 @@ header ul {
     margin-top: 15px;
 }
 
+.welcome {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px; /* Add some top margin to separate from the navigation bar */
+    border-bottom: 5px solid #362312; /* Add a white border below the welcome section */
+    border-radius: 10px;
+}
+
+.quote {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: #362312;
+    margin-top: 35px;
+    font-style: italic;
+}
+
+.coffee-link {
+    color: #362312;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.coffee-link:hover {
+    color: white;
+    transition: all 0.3s ease 0s;
+}
+
+.introduction {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    color: #362312;
+    margin-top: 35px;
+    font-style: italic;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* or any alignment you prefer */
+}
+
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .nav_links li {
     display: inline-block;
     justify-content: space-between;
     color: white;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     margin-top: 10px;
+    margin-right: 45px;
 }
 
 .nav_links li a {
+    display: flex;
     transition: all 0.3s ease 0s;
     list-style-type: none;
     text-decoration: none;
-    padding: 55px;
     color: white;
+    margin-left: 50px; /* Adjust the left margin as needed */
 }
 
 .nav_links li a:hover {
@@ -60,6 +111,7 @@ div, h1, form, input, p {
     padding: 0;
     margin: 0;
     outline: none;
+    font-family: "Sinhala MN", sans-serif;
     font-size: 16px;
     color: #362312;
 }
@@ -95,6 +147,7 @@ body {
     max-width: 340px;
     min-height: 460px;
     padding: 10px 0;
+    margin: auto;
     border-radius: 5px;
     border: solid 1px white;
     box-shadow: 2px 3px 6px rgba(0,0,0,.50);
@@ -143,6 +196,47 @@ label.radio:before {
     border-radius: 50%;
     background: #362312;
 }
+#userName {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    color: #362312;
+    background-color: white;
+}
+#userEmail {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    color: #362312;
+    background-color: white;
+}
+#userFavCafe {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    color: #362312;
+    background-color: white;
+}
+#userID {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    color: #362312;
+    background-color: white;
+}
+
 label.radio:after {
     content: "";
     position: absolute;
@@ -197,5 +291,337 @@ button {
     color: #fff;
 }
 button:hover {
-    background: #362312;
+    opacity: 0.75;
+}
+
+button:active {
+    /* Your active state styles here */
+    background-color: #362312;
+}
+
+#user-main-block {
+    clear: left;
+    display: inline-block;
+    max-width: 340px;
+    min-height: 460px;
+    padding: 10px;
+    margin: 0;
+    border-radius: 5px;
+    border: solid 1px white;
+    box-shadow: 2px 3px 6px rgba(0,0,0,.50);
+    background: #836953;
+
+}
+
+#userCheck {
+    margin: auto;
+
+}
+
+#userInput {
+
+    width: 96%;
+    border-radius: 5px;
+    margin: auto;
+}
+#userInput2 {
+    width: 96%;
+    border-radius: 5px;
+    margin: auto;
+}
+
+#userNameBox {
+    background-color: white;
+    border-radius: 5px;
+}
+
+#userEmailBox {
+    background-color: white;
+    border-radius: 5px;
+}
+
+#userFavCafeBox {
+    background-color: white;
+    border-radius: 5px;
+}
+
+#userIDBox {
+    background-color: white;
+    border-radius: 5px;
+}
+
+#dropDownSelect {
+    background-color: white;
+    border-radius: 5px;
+}
+
+#list-Main-Block {
+    clear: left;
+    display: inline-block;
+    max-width: 340px;
+    min-height: 460px;
+    padding: 10px;
+    margin: 0;
+    border-radius: 5px;
+    border: solid 1px white;
+    box-shadow: 2px 3px 6px rgba(0,0,0,.50);
+    background: #836953;
+}
+
+#listChoice1 {
+    display: inline;
+}
+
+#listChoice2 {
+    display: inline;
+}
+
+#listChoice3 {
+    display: inline;
+}
+
+#listChoice4 {
+    display: inline;
+}
+
+#dropDownSelect {
+    color: black;
+}
+
+#dropChoice1 {
+    color: white;
+}
+
+#dropChoice2 {
+    color: white;
+}
+
+#dropChoice3 {
+    color: white;
+}
+
+#dropChoice4 {
+    color: white;
+}
+
+#cafe1 {
+    display: inline-block;
+    font-size: 16px;
+    background-color: white;
+    height: 25px;
+    width: 96%;
+    border-radius: 5px;
+    margin: auto;
+    text-align: center;
+}
+
+#cafe1box {
+    display: inline-block;
+    color: white;
+    border-radius: 5px;
+    margin: auto;
+}
+
+#cafe2 {
+    display: inline-block;
+    font-size: 16px;
+    background-color: white;
+    height: 25px;
+    width: 96%;
+    border-radius: 5px;
+    margin: auto;
+    text-align: center;
+}
+
+#cafe2box {
+    display: inline-block;
+    color: white;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+#cafe3 {
+    display: inline-block;
+    font-size: 16px;
+    background-color: white;
+    height: 25px;
+    width: 96%;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#cafe3box {
+    display: inline-block;
+    color: white;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+#cafe4 {
+    display: inline-block;
+    font-size: 16px;
+    background-color: white;
+    height: 25px;
+    width: 96%;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#cafe4box {
+    display: inline-block;
+    color: white;
+    border-radius: 5px;
+}
+
+#cafe5 {
+    display: inline-block;
+    font-size: 16px;
+    background-color: white;
+    height: 25px;
+    width: 96%;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#cafe5box {
+    display: inline-block;
+    color: white;
+    border-radius: 5px;
+}
+
+#cafe6 {
+    display: inline-block;
+    font-size: 16px;
+    background-color: white;
+    height: 25px;
+    width: 96%;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#cafe6box {
+    display: inline-block;
+    color: white;
+    border-radius: 5px;
+}
+
+#cafe7 {
+    display: inline-block;
+    font-size: 16px;
+    background-color: white;
+    height: 25px;
+    width: 96%;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#cafe7box {
+    display: inline-block;
+    color: white;
+    border-radius: 5px;
+}
+
+#cafe8 {
+    display: inline-block;
+    font-size: 16px;
+    background-color: white;
+    height: 25px;
+    width: 96%;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#cafe8box {
+    display: inline-block;
+    color: white;
+    border-radius: 5px;
+}
+
+#cafe9 {
+    display: inline-block;
+    font-size: 16px;
+    background-color: white;
+    height: 25px;
+    width: 96%;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#cafe9box {
+    display: inline-block;
+    color: white;
+    border-radius: 5px;
+}
+#cafe10 {
+    display: inline-block;
+    font-size: 16px;
+    background-color: white;
+    height: 25px;
+    width: 96%;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#cafe10box {
+    display: inline-block;
+    color: white;
+    border-radius: 5px;
+}
+#cafe11 {
+    display: inline-block;
+    font-size: 16px;
+    background-color: white;
+    height: 25px;
+    width: 96%;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#cafe11box {
+    display: inline-block;
+    color: white;
+    border-radius: 5px;
+}
+
+#cafe12 {
+    display: inline-block;
+    font-size: 16px;
+    background-color: white;
+    height: 25px;
+    width: 96%;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#cafe12box {
+    display: inline-block;
+    color: white;
+    border-radius: 5px;
+}
+
+#cafe13 {
+    display: inline-block;
+    font-size: 16px;
+    background-color: white;
+    height: 25px;
+    width: 96%;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#cafe13box {
+    display: inline-block;
+    color: white;
+    border-radius: 5px;
 }

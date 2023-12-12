@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>CoffeeCrazeCPH.com</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+          integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+          crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
 </head>
 
+<body>
 <header>
     <a href="index.html"><img class="logo" src="Cafes%20Logo.png" width="300" height="60" alt="logo"></a>
     <nav>
         <ul class="nav_links">
-            <li><a href="Map/map.html">Map</a></li>
+            <li><a href="map.html">Map</a></li>
             <li><a href="favorites.html">Favorites</a></li>
             <li><a href="list.html">List Of Cafes</a></li>
-            <li><a href="register.html">Register/Log In</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="logIn.html">Log In</a></li>
         </ul>
     </nav>
 </header>
-<script src="./main.js"></script>
+
+<main>
+    <section class="welcome">
+        <h1 style="font-size: 150px">Welcome</h1>
+    </section>
+    <p class="quote"><a href="list.html" class="coffee-link">"Sip, <a href="map.html" class="coffee-link"> Search</a>, <a href="favorites.html" class="coffee-link"> Savor"</a></p>
+    <p class="introduction">Uncover Copenhagen's Best Cafes with</p>
+    <p class="introduction"><a href="index.html" class="coffee-link">CoffeeCrazeCPH!</a></p>
+</main>
+<script src="registration-page/server.js"></script>
+</body>
+
 </html>
