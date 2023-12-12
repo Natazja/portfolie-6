@@ -99,23 +99,3 @@ h1 {
 
 
 
-
-.text-section {
-    text-align: justify;
-    padding: 15px; /* Adjust as needed */
-    margin-bottom: 20px; /* Adjust as needed */
-    line-height: 1.5; /* Adjust as needed */
-}
-
-.location-section {
-    padding: 15px;
-    margin: 0px;
-}
-
-.location-section p {
-    font-size: 20px;
-}
-
-
-
-

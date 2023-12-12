@@ -11,15 +11,10 @@
 
 <!-- Navigation bar or header -->
 <header>
-    <h1>Democratic Coffee</h1>
+    <h1 id="cafename"></h1>
 </header>
 
 <!-- Favorite button -->
-<div class="buttons">
-     <button id="button1" class="btn"><i class="fa-solid fa-heart"></i></button>
-     <p id="message" class="hidden">Added to favorites!</p>
-</div>
-
 <div class="images-section">
     <section>
     <h2>Images</h2>
@@ -30,20 +25,6 @@
 </div>
 
 <!-- Description -->
-<div class="text-section">
-<section>
-    <h2>About Democratic Coffee</h2>
-    <p>
-        Located in the busy Krystalgade in Copenhagen’s centre, close to Nørreport, this coffee shop is named after its location in one of the most democratic places you’ll find – the library.
-    </p>
-    <p>
-        Every day, Democratic Coffee attracts lots of students, business people or whoever just want a great cup of coffee, often accompanied by the speciality of the café – their almond croissant, which is freshly baked at the spot twice a day.
-        Just like the famous pastry, all the baked goodies are homemade right behind the counter.
-    </p>
-        But, most importantly is of course the coffee. Democratic Coffee specialises in single-origin, lightly roasted coffee which they’ve just recently started selling as beans as well. The small company don’t have the capacity to roast in-house, so they head over to The Factory at Refshaleøen, where you can book a coffee roaster – who knew that was a thing?
-        If you’re looking for a good place to study, read the paper or enjoy your morning coffee in the vibrant heart of Copenhagen, this place is worth a visit.
-</section>
-</div>
 
 <!-- Contact Information -->
 <div class="contact-section">
@@ -76,20 +57,7 @@
     </table>
 </section>
 </div>
-
-<!-- Map -->
-<section>
-    <h2>Location</h2>
-    <div>
-        <!-- Embed a map using Google Maps or another mapping service -->
-        <!-- Replace the coordinates with the actual coordinates of the cafe -->
-
-    </div>
-</section>
-
-<!-- Add more sections as needed, such as Menu, Events, Social Media links, etc. -->
-
-<!-- Footer -->
+<script src="fetchCafeData.js"></script>
 <script src="https://kit.fontawesome.com/6dd8ea4c88.js" crossorigin="anonymous"></script>
 <script src="favoriteButton.js"></script>
 </body>
