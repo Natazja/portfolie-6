@@ -3,7 +3,7 @@ const mysql = require("mysql2");
 const cors = require("cors");
 const dotenv = require("dotenv");
 const app = express();
-const port = process.env.PORT;
+const port = 3002;
 
 
 const result = dotenv.config();
@@ -54,6 +54,10 @@ app.get("/cafes", (req, res) =>{
         res.send(result)
     })
 });
+
+
+
+
 
 app.get("/", (req, res)=>{
    res.send("everything ok");
