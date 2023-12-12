@@ -349,3 +349,279 @@ button:active {
     background-color: white;
     border-radius: 5px;
 }
+
+#dropDownSelect {
+    background-color: white;
+    border-radius: 5px;
+}
+
+#list-Main-Block {
+    clear: left;
+    display: inline-block;
+    max-width: 340px;
+    min-height: 460px;
+    padding: 10px;
+    margin: 0;
+    border-radius: 5px;
+    border: solid 1px white;
+    box-shadow: 2px 3px 6px rgba(0,0,0,.50);
+    background: #836953;
+}
+
+#listChoice1 {
+    display: inline;
+}
+
+#listChoice2 {
+    display: inline;
+}
+
+#listChoice3 {
+    display: inline;
+}
+
+#listChoice4 {
+    display: inline;
+}
+
+#dropDownSelect {
+    color: black;
+}
+
+#dropChoice1 {
+    color: white;
+}
+
+#dropChoice2 {
+    color: white;
+}
+
+#dropChoice3 {
+    color: white;
+}
+
+#dropChoice4 {
+    color: white;
+}
+
+#cafe1 {
+    display: inline-block;
+    font-size: 16px;
+    background-color: white;
+    height: 25px;
+    width: 96%;
+    border-radius: 5px;
+    margin: auto;
+    text-align: center;
+}
+
+#cafe1box {
+    display: inline-block;
+    color: white;
+    border-radius: 5px;
+    margin: auto;
+}
+
+#cafe2 {
+    display: inline-block;
+    font-size: 16px;
+    background-color: white;
+    height: 25px;
+    width: 96%;
+    border-radius: 5px;
+    margin: auto;
+    text-align: center;
+}
+
+#cafe2box {
+    display: inline-block;
+    color: white;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+#cafe3 {
+    display: inline-block;
+    font-size: 16px;
+    background-color: white;
+    height: 25px;
+    width: 96%;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#cafe3box {
+    display: inline-block;
+    color: white;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+#cafe4 {
+    display: inline-block;
+    font-size: 16px;
+    background-color: white;
+    height: 25px;
+    width: 96%;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#cafe4box {
+    display: inline-block;
+    color: white;
+    border-radius: 5px;
+}
+
+#cafe5 {
+    display: inline-block;
+    font-size: 16px;
+    background-color: white;
+    height: 25px;
+    width: 96%;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#cafe5box {
+    display: inline-block;
+    color: white;
+    border-radius: 5px;
+}
+
+#cafe6 {
+    display: inline-block;
+    font-size: 16px;
+    background-color: white;
+    height: 25px;
+    width: 96%;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#cafe6box {
+    display: inline-block;
+    color: white;
+    border-radius: 5px;
+}
+
+#cafe7 {
+    display: inline-block;
+    font-size: 16px;
+    background-color: white;
+    height: 25px;
+    width: 96%;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#cafe7box {
+    display: inline-block;
+    color: white;
+    border-radius: 5px;
+}
+
+#cafe8 {
+    display: inline-block;
+    font-size: 16px;
+    background-color: white;
+    height: 25px;
+    width: 96%;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#cafe8box {
+    display: inline-block;
+    color: white;
+    border-radius: 5px;
+}
+
+#cafe9 {
+    display: inline-block;
+    font-size: 16px;
+    background-color: white;
+    height: 25px;
+    width: 96%;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#cafe9box {
+    display: inline-block;
+    color: white;
+    border-radius: 5px;
+}
+#cafe10 {
+    display: inline-block;
+    font-size: 16px;
+    background-color: white;
+    height: 25px;
+    width: 96%;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#cafe10box {
+    display: inline-block;
+    color: white;
+    border-radius: 5px;
+}
+#cafe11 {
+    display: inline-block;
+    font-size: 16px;
+    background-color: white;
+    height: 25px;
+    width: 96%;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#cafe11box {
+    display: inline-block;
+    color: white;
+    border-radius: 5px;
+}
+
+#cafe12 {
+    display: inline-block;
+    font-size: 16px;
+    background-color: white;
+    height: 25px;
+    width: 96%;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#cafe12box {
+    display: inline-block;
+    color: white;
+    border-radius: 5px;
+}
+
+#cafe13 {
+    display: inline-block;
+    font-size: 16px;
+    background-color: white;
+    height: 25px;
+    width: 96%;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#cafe13box {
+    display: inline-block;
+    color: white;
+    border-radius: 5px;
+}
