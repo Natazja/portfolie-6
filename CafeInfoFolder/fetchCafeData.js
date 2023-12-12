@@ -1,6 +1,7 @@
 // Example GET request to /cafes endpoint
 fetch("http://localhost:4000/cafes")
-    .then(response => {
+    .then(res => res.json())
+    .then((data)=>(response => {
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
@@ -11,4 +12,4 @@ fetch("http://localhost:4000/cafes")
     })
     .catch(error => {
         console.error('Fetch error:', error.message);
-    });
+    }));
