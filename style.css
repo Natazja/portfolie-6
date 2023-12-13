@@ -386,6 +386,7 @@ button:active {
 
 #dropDownSelect {
     color: black;
+    width: 32%;
 }
 
 #dropChoice1 {
@@ -411,16 +412,11 @@ button:active {
     height: 25px;
     width: 96%;
     border-radius: 5px;
-    margin: auto;
     text-align: center;
+    margin-bottom: 15px;
 }
 
-#cafe1box {
-    display: inline-block;
-    color: white;
-    border-radius: 5px;
-    margin: auto;
-}
+
 
 #cafe2 {
     display: inline-block;
@@ -433,12 +429,7 @@ button:active {
     text-align: center;
 }
 
-#cafe2box {
-    display: inline-block;
-    color: white;
-    border-radius: 5px;
-    margin-top: 15px;
-}
+
 
 #cafe3 {
     display: inline-block;
@@ -449,13 +440,6 @@ button:active {
     border-radius: 5px;
     margin-top: 15px;
     text-align: center;
-}
-
-#cafe3box {
-    display: inline-block;
-    color: white;
-    border-radius: 5px;
-    margin-top: 15px;
 }
 
 #cafe4 {
@@ -469,12 +453,6 @@ button:active {
     text-align: center;
 }
 
-#cafe4box {
-    display: inline-block;
-    color: white;
-    border-radius: 5px;
-}
-
 #cafe5 {
     display: inline-block;
     font-size: 16px;
@@ -484,12 +462,6 @@ button:active {
     border-radius: 5px;
     margin-top: 15px;
     text-align: center;
-}
-
-#cafe5box {
-    display: inline-block;
-    color: white;
-    border-radius: 5px;
 }
 
 #cafe6 {
@@ -503,12 +475,6 @@ button:active {
     text-align: center;
 }
 
-#cafe6box {
-    display: inline-block;
-    color: white;
-    border-radius: 5px;
-}
-
 #cafe7 {
     display: inline-block;
     font-size: 16px;
@@ -518,12 +484,6 @@ button:active {
     border-radius: 5px;
     margin-top: 15px;
     text-align: center;
-}
-
-#cafe7box {
-    display: inline-block;
-    color: white;
-    border-radius: 5px;
 }
 
 #cafe8 {
@@ -537,12 +497,6 @@ button:active {
     text-align: center;
 }
 
-#cafe8box {
-    display: inline-block;
-    color: white;
-    border-radius: 5px;
-}
-
 #cafe9 {
     display: inline-block;
     font-size: 16px;
@@ -554,11 +508,6 @@ button:active {
     text-align: center;
 }
 
-#cafe9box {
-    display: inline-block;
-    color: white;
-    border-radius: 5px;
-}
 #cafe10 {
     display: inline-block;
     font-size: 16px;
@@ -570,11 +519,6 @@ button:active {
     text-align: center;
 }
 
-#cafe10box {
-    display: inline-block;
-    color: white;
-    border-radius: 5px;
-}
 #cafe11 {
     display: inline-block;
     font-size: 16px;
@@ -584,12 +528,6 @@ button:active {
     border-radius: 5px;
     margin-top: 15px;
     text-align: center;
-}
-
-#cafe11box {
-    display: inline-block;
-    color: white;
-    border-radius: 5px;
 }
 
 #cafe12 {
@@ -603,12 +541,6 @@ button:active {
     text-align: center;
 }
 
-#cafe12box {
-    display: inline-block;
-    color: white;
-    border-radius: 5px;
-}
-
 #cafe13 {
     display: inline-block;
     font-size: 16px;
@@ -618,10 +550,4 @@ button:active {
     border-radius: 5px;
     margin-top: 15px;
     text-align: center;
-}
-
-#cafe13box {
-    display: inline-block;
-    color: white;
-    border-radius: 5px;
 }
