@@ -1,4 +1,4 @@
-fetch("http://localhost:3002/cafes")
+fetch("http://localhost:4000/cafes")
     .then(res => res.json())
     .then((data)=> { // add a removal of the previously loaded cafes after the eventListener.
             document.querySelector("#cafe1").style.display = "none";

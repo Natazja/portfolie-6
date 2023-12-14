@@ -3,4 +3,4 @@ node_modules
 /.idea/portfolie-6.iml
 /.idea/vcs.xml
 user-page/.env
-cafe-list/.env
+.env
