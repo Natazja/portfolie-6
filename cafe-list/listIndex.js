@@ -1,6 +1,20 @@
-fetch("http://localhost:3000/cafes")
+fetch("http://localhost:3002/cafes")
     .then(res => res.json())
     .then((data)=> { // add a removal of the previously loaded cafes after the eventListener.
+            document.querySelector("#cafe1").style.display = "none";
+            document.querySelector("#cafe2").style.display = "none";
+            document.querySelector("#cafe3").style.display = "none";
+            document.querySelector("#cafe4").style.display = "none";
+            document.querySelector("#cafe5").style.display = "none";
+            document.querySelector("#cafe6").style.display = "none";
+            document.querySelector("#cafe7").style.display = "none";
+            document.querySelector("#cafe8").style.display = "none";
+            document.querySelector("#cafe9").style.display = "none";
+            document.querySelector("#cafe10").style.display = "none";
+            document.querySelector("#cafe11").style.display = "none";
+            document.querySelector("#cafe12").style.display = "none";
+            document.querySelector("#cafe13").style.display = "none";
+
         document.querySelector("#dropDownSelect").addEventListener("change", function cafeList() {
             document.querySelector("#cafe1").style.display = "none";
             document.querySelector("#cafe2").style.display = "none";
