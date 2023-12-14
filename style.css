@@ -405,6 +405,7 @@ button:active {
     color: white;
 }
 
+
 #cafe1 {
     display: inline-block;
     font-size: 16px;
@@ -414,6 +415,8 @@ button:active {
     border-radius: 5px;
     text-align: center;
     margin-bottom: 15px;
+    text-decoration: none;
+    color: #362312;
 }
 
 
@@ -427,6 +430,8 @@ button:active {
     border-radius: 5px;
     margin: auto;
     text-align: center;
+    text-decoration: none;
+    color: #362312;
 }
 
 
@@ -440,6 +445,8 @@ button:active {
     border-radius: 5px;
     margin-top: 15px;
     text-align: center;
+    text-decoration: none;
+    color: #362312;
 }
 
 #cafe4 {
@@ -451,6 +458,8 @@ button:active {
     border-radius: 5px;
     margin-top: 15px;
     text-align: center;
+    text-decoration: none;
+    color: #362312;
 }
 
 #cafe5 {
@@ -462,6 +471,8 @@ button:active {
     border-radius: 5px;
     margin-top: 15px;
     text-align: center;
+    text-decoration: none;
+    color: #362312;
 }
 
 #cafe6 {
@@ -473,6 +484,8 @@ button:active {
     border-radius: 5px;
     margin-top: 15px;
     text-align: center;
+    text-decoration: none;
+    color: #362312;
 }
 
 #cafe7 {
@@ -484,6 +497,8 @@ button:active {
     border-radius: 5px;
     margin-top: 15px;
     text-align: center;
+    text-decoration: none;
+    color: #362312;
 }
 
 #cafe8 {
@@ -495,6 +510,8 @@ button:active {
     border-radius: 5px;
     margin-top: 15px;
     text-align: center;
+    text-decoration: none;
+    color: #362312;
 }
 
 #cafe9 {
@@ -506,6 +523,8 @@ button:active {
     border-radius: 5px;
     margin-top: 15px;
     text-align: center;
+    text-decoration: none;
+    color: #362312;
 }
 
 #cafe10 {
@@ -517,6 +536,8 @@ button:active {
     border-radius: 5px;
     margin-top: 15px;
     text-align: center;
+    text-decoration: none;
+    color: #362312;
 }
 
 #cafe11 {
@@ -528,6 +549,8 @@ button:active {
     border-radius: 5px;
     margin-top: 15px;
     text-align: center;
+    text-decoration: none;
+    color: #362312;
 }
 
 #cafe12 {
@@ -539,6 +562,8 @@ button:active {
     border-radius: 5px;
     margin-top: 15px;
     text-align: center;
+    text-decoration: none;
+    color: #362312;
 }
 
 #cafe13 {
@@ -550,6 +575,8 @@ button:active {
     border-radius: 5px;
     margin-top: 15px;
     text-align: center;
+    text-decoration: none;
+    color: #362312;
 }
 
 #map-container {
