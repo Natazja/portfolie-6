@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         try {
-            const response = await fetch("http://localhost:4000/users/login", {
+            const response = await fetch("http://localhost:3000/users/login", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -20,14 +20,14 @@ document.addEventListener("DOMContentLoaded", function () {
             });
 
             if (!response.ok) {
-                throw new Error(`Error logging in. HTTP status ${response.status}`);
+                const errorText = await response.text();
+                throw new Error(`Error logging in. HTTP status ${response.status}. Response: ${errorText}`);
             }
 
             const userData = await response.json();
 
-            // Redirect to user page or handle the response as needed
-            console.log("Logged in successfully:", userData);
-            // You can redirect or handle the user's profile here
+            // Redirect to user page
+            window.location.href = "/userpage.html"; // Replace with your actual user page URL
 
         } catch (error) {
             console.error("Error during fetch:", error.message);
