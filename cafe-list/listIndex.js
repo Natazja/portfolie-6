@@ -82,5 +82,3 @@ fetch("http://localhost:3002/cafes")
             }
         })
     })
-
-
