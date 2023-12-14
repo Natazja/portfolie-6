@@ -551,3 +551,14 @@ button:active {
     margin-top: 15px;
     text-align: center;
 }
+
+
+#map {
+    width: 600px;
+    height: 600px;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
