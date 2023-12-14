@@ -22,15 +22,6 @@ app.listen(port, () => {
 app.use(express.json());
 app.use(cors());
 
-const pool = mysql.createPool({
-    host: "localhost",
-    user: "root",
-    port: 3306,
-    password: "Jcv36qyk",
-    database: "cafes",
-    connectionLimit: 10, // Adjust as needed
-});
-
 
 app.get('/cafes', (req, res) => {
     pool.query('SELECT * FROM cafes', (error, results, fields) => {
