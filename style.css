@@ -1,4 +1,5 @@
 * {
+    background-color: #836953;
     font-family: "Sinhala MN", serif;
 }
 
@@ -597,5 +598,10 @@ button:active {
     align-items: center;
 }
 
+#userInfoBox {
+    display: none;
+}
 
-
+#dropChoice5 {
+    color: white;
+}
