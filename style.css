@@ -7,6 +7,7 @@ body {
     display: flex;
     flex-direction: column; /* Ensure a vertical flow of header and main */
     align-items: center; /* Center content horizontally */
+    background-color: #836953;
 }
 
 header {
@@ -552,6 +553,14 @@ button:active {
     text-align: center;
 }
 
+#map-container {
+    width: 600px;
+    height: 600px; /* Adjust the height as needed */
+    background-color: #e0e0e0; /* Set the background color for the map container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 #map {
     width: 600px;
