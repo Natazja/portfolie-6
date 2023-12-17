@@ -1,3 +1,4 @@
+drop database if exists cafes;
 create database cafes;
 use cafes;
 drop table if exists favorites;
@@ -47,7 +48,8 @@ VALUES
     ('Grace', 'grace@email.com', 'H A N S Coffee', 'Ml1oVr7p', 'Personal', 7),
     ('Henry', 'henry@email.com', 'Prolog', 'Sg5dYb9f', 'Personal', 8),
     ('Ivy', 'ivy@email.com', 'Paludan Bog & Café', 'Wz3nUx7k', 'Personal', 9),
-    ('Jack', 'jack@email.com', 'Rist', 'Pq6rHv8l', 'Personal', 10);
+    ('Jack', 'jack@email.com', 'Rist', 'Pq6rHv8l', 'Personal', 10),
+    ("test", "test@test.com", "Rist", "test", "Personal", "11");
 
 INSERT INTO cafes (cafe_name, adress, postal_code, area, city, stars, cafe_id)
 VALUES
@@ -70,6 +72,8 @@ INSERT INTO favorites (user_id, cafe_id, popularity, favorite_id) VALUES
 	(1, 2, 4, 2),
 	(2, 1, 3, 3), -- User 2 favorites Cafe 1 with popularity 3
 	(2, 3, 5, 4); -- User 2 favorites Cafe 3 with popularity 5
+    
+    select * from users;
 
 
 
@@ -82,12 +86,3 @@ INSERT INTO favorites (user_id, cafe_id, popularity, favorite_id) VALUES
 
 
     
-
-
-
-
-
-
-
-
-
