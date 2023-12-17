@@ -1,3 +1,6 @@
+// *** Jonathan's section begins ***
+
+// importing all libraries
 const express = require("express");
 const mysql = require("mysql2");
 const cors = require("cors");
@@ -17,15 +20,16 @@ console.log(result.parsed);
 app.use(cors());
 app.use(express.json());
 
+// creating connection to mysql
 const connection = mysql.createConnection({
     host: "localhost",
     user: "root",
     port: 3306,
-    password: "Sxj42yvx",
-    database: "favorit_cafes",
-    connectionLimit: 10, // Adjust as needed
+    password: "Mkansakar12098",
+    database: "cafes",
 });
 
+// check to see if api is connected
 connection.connect((error) => {
     if (error) {
         console.log("error")
@@ -34,7 +38,7 @@ connection.connect((error) => {
     }
 });
 
-
+// 1st query, giving db on users.
 app.get("/users", (req, res) =>{
     console.log("asd0");
     connection.query("select * from users", function (err, result){
@@ -46,6 +50,7 @@ app.get("/users", (req, res) =>{
     })
 });
 
+// 2nd query, giving db on cafes
 app.get("/cafes", (req, res) =>{
     console.log("asd0");
     connection.query("select * from cafes", function (err, result){
@@ -58,28 +63,10 @@ app.get("/cafes", (req, res) =>{
 });
 
 
-
-
-
-app.get("/", (req, res)=>{
-   res.send("everything ok");
-});
-
-
-
-//const user1 =
-// console.log(user1)
-
-
-
-/* app.get("/users", (req, res) => {
-    res.send(`${users}`)
-})
-
- */
+// listen-check
 app.listen(port, () => {
     console.log("api is listening")
 })
 
 
-// document.querySelector(".demo").innerHTML = "hej"
+// *** Jonathan's section end ***

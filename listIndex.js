@@ -1,37 +1,40 @@
+// *** Jonathan's section begins ***
+
+// function that removes the css:display from the listings.
+function removeDisplay() {
+    document.querySelector("#cafe1").style.display = "none";
+    document.querySelector("#cafe2").style.display = "none";
+    document.querySelector("#cafe3").style.display = "none";
+    document.querySelector("#cafe4").style.display = "none";
+    document.querySelector("#cafe5").style.display = "none";
+    document.querySelector("#cafe6").style.display = "none";
+    document.querySelector("#cafe7").style.display = "none";
+    document.querySelector("#cafe8").style.display = "none";
+    document.querySelector("#cafe9").style.display = "none";
+    document.querySelector("#cafe10").style.display = "none";
+    document.querySelector("#cafe11").style.display = "none";
+    document.querySelector("#cafe12").style.display = "none";
+    document.querySelector("#cafe13").style.display = "none";
+}
+
+// fetching the data.
 fetch("http://localhost:4000/cafes")
     .then(res => res.json())
-    .then((data)=> { // add a removal of the previously loaded cafes after the eventListener.
-            document.querySelector("#cafe1").style.display = "none";
-            document.querySelector("#cafe2").style.display = "none";
-            document.querySelector("#cafe3").style.display = "none";
-            document.querySelector("#cafe4").style.display = "none";
-            document.querySelector("#cafe5").style.display = "none";
-            document.querySelector("#cafe6").style.display = "none";
-            document.querySelector("#cafe7").style.display = "none";
-            document.querySelector("#cafe8").style.display = "none";
-            document.querySelector("#cafe9").style.display = "none";
-            document.querySelector("#cafe10").style.display = "none";
-            document.querySelector("#cafe11").style.display = "none";
-            document.querySelector("#cafe12").style.display = "none";
-            document.querySelector("#cafe13").style.display = "none";
+    .then((data)=> {
+        // removing the initial displays so the site is clean on load.
+        removeDisplay();
 
+        // eventlistener that works when the dropdown menu has a change, which then removes any displaying elements and
+        // then depending on what the dropdown matches, it will display however many elements are needed.
+
+        // sadly havent been able to find a solution to the inline block code repition - tried my hand with functions
+        // and forloops but couldnt make it work.
         document.querySelector("#dropDownSelect").addEventListener("change", function cafeList() {
-            document.querySelector("#cafe1").style.display = "none";
-            document.querySelector("#cafe2").style.display = "none";
-            document.querySelector("#cafe3").style.display = "none";
-            document.querySelector("#cafe4").style.display = "none";
-            document.querySelector("#cafe5").style.display = "none";
-            document.querySelector("#cafe6").style.display = "none";
-            document.querySelector("#cafe7").style.display = "none";
-            document.querySelector("#cafe8").style.display = "none";
-            document.querySelector("#cafe9").style.display = "none";
-            document.querySelector("#cafe10").style.display = "none";
-            document.querySelector("#cafe11").style.display = "none";
-            document.querySelector("#cafe12").style.display = "none";
-            document.querySelector("#cafe13").style.display = "none";
+
+            removeDisplay();
 
             if (document.querySelector("#dropDownSelect").value === "all") {
-                document.querySelector("#cafe1").style.display = "inline-block";
+                document.querySelector('#cafe1').style.display = "inline-block";
                 document.querySelector("#cafe2").style.display = "inline-block";
                 document.querySelector("#cafe3").style.display = "inline-block";
                 document.querySelector("#cafe4").style.display = "inline-block";
@@ -96,3 +99,5 @@ fetch("http://localhost:4000/cafes")
             }
         })
     })
+
+// *** Jonathan's section end ***
